@@ -1,0 +1,76 @@
+.admin-container {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.admin-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.admin-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-inputs input  {
+    background-color: #F6F1F1;
+    border: 2px solid #146C94;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.admin-inputs label {
+    font-weight: bold;
+}
+
+.admin-box img {
+    padding: 15px;
+    background-color: #146C94;
+    border-radius: 50px;
+}
+
+.admin-box button {
+    padding: 10px;
+    width: 100%;
+    background-color: #146C94;
+    border: none;
+    color: #FFFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.form-clear {
+    margin-top: 30px;
+}
+
+.form-clear button  {
+    width: 100%;
+    background-color: #146C94;
+    color: #FFFF;
+    font-size: 35px;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border: none;
+    border-radius: 10px;
+}
+
+
+.container-text select {
+    border: 2px solid #0A2647;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.container-text select option {
+    font-family: 'Raleway', sans-serif;
+}

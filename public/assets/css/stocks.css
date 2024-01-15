@@ -1,0 +1,105 @@
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.update-stock {
+    margin-top: 30px;
+}
+
+.one-stock {
+    width: fit-content;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.stock-add {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.update-stock button, .stock-add button {
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #0A2647;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.container-stock {
+    margin-top: 20px;
+    border: solid 1px #000;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    width: fit-content;
+    max-height: 800px;
+    overflow-y:auto;
+
+}
+
+.stock-table {
+    border-collapse: collapse;
+    border-radius: 10px;
+  }
+
+  .stock-table td {
+    border-bottom: 1px solid #000000;
+    padding: 8px 40px;
+    font-weight: 700;
+    color: #0A2647;
+  }
+
+  .stock-table th {
+    padding: 8px 40px;
+    font-weight: 300;
+  }
+
+  .stock-table th:nth-of-type(1) {
+    border-top-left-radius: 10px;
+  }
+
+  .stock-table th:nth-last-of-type(1) {
+    border-top-right-radius: 10px;
+  }
+
+  .stock-table tr:nth-of-type(1) {
+    background-color: rgba(175, 211, 226, 0.5);
+  }
+
+
+
+  .stock-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    border-bottom: solid 1px black;
+  }
+
+  .stock-table img {
+    width: 50px;
+  }
+
+  .action {
+    display: flex;
+    gap: 7px;
+  }
+
+  .action button, input {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 7px;
+    color: #FFFFFF;
+  }
+
+  .action button {
+    background-color: #0A2647;
+  }
+  .action button:last-of-type {
+    background-color: #900C3F;
+  }

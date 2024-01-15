@@ -1,0 +1,373 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.sidebar {
+    width: 14%;
+    background-color: #146C94;
+    height: 100%;
+    position: fixed; /* Set position to fixed */
+    top: 0
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.sidebar img {
+    width: 40%;
+}
+
+.sidebar a {
+    width: 100%;
+    border-radius: 14px;
+    padding: 12px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.isactive {
+    background-color: #AFD3E2;
+    color: #146C94;
+    transform: translate3d(0, 0, 0);
+}
+
+.inactive {
+    color: #AFD3E2;
+}
+
+.sidebar a img {
+    width: 20px;
+}
+
+.sidebar a h5 {
+    font-weight: 500;
+    font-size: 0.98em;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.sidebar a:hover {
+    color: #F6F1F1;
+    transition: ease 0.3s;
+}
+
+
+
+.container-bakery {
+    width: 86%;
+    margin-left: 14%;
+}
+.sidebar a:nth-of-type(1) {
+   margin-top: 20px;
+}
+
+
+.container-pad {
+    padding: 20px;
+}
+
+
+.item-container {
+    padding: 0px 5px;
+    margin-top: 30px;
+}
+
+.item {
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    border: 2px solid #146C94;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 200px;
+}
+
+.item img {
+    width: 7em !important;
+}
+
+.item h4 span {
+    font-weight: 400;
+    color: #0A2647;
+    font-size: 0.7em;
+
+}
+
+.item h4 {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.item h4, .item h2 {
+    color: #146C94;
+}
+
+.item h2 {
+    margin-top: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.item div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+
+.item div:nth-of-type(2) {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.item div:nth-of-type(2) input {
+    width: 100px;
+    padding: 5px;
+}
+
+.calculate {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.calculate button {
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: #146C94;
+    color: #FFFFFF;
+    border: none;
+}
+
+.product-table {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.product-table .table-container {
+    border-radius: 20px;
+    border: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.calculate-table {
+    border-collapse: collapse;
+}
+
+.calculate-table th {
+    background-color: rgba(175, 211, 226, 0.5);
+    font-weight: 400;
+}
+
+.calculate-table th:first-of-type {
+    border-top-left-radius: 20px;
+}
+
+.calculate-table th:last-of-type {
+    border-top-right-radius: 20px;
+}
+
+
+.calculate-table th, .calculate-table td  {
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.table-container input[type=submit] {
+    background-color: #0A2647;
+    color: #FFFFFF;
+    padding: 5px 15px;
+    border-radius: 7px;
+}
+
+
+#money {
+    width: 80px;
+    position: absolute;
+    margin-left: -25px;
+    margin-top: -13px;
+    padding: 2px 5px;
+}
+
+.admin-container {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.admin-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.admin-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-inputs input  {
+    background-color: #F6F1F1;
+    border: 2px solid #146C94;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 30px;
+    border-radius: 7px;
+}
+
+.admin-inputs label {
+    font-weight: bold;
+}
+
+.admin-box img {
+    border-radius: 50%;
+}
+
+.admin-box button {
+    padding: 10px;
+    width: 100%;
+    background-color: #146C94;
+    border: none;
+    color: #FFFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.form-clear {
+    margin-top: 30px;
+}
+
+.form-clear button  {
+    width: 100%;
+    background-color: #146C94;
+    color: #FFFF;
+    font-size: 35px;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border: none;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 944px) {
+    .sidebar a h5 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .sidebar a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .container-pad{
+        padding: 5px;
+    }
+
+    .item {
+        padding: 10px;
+        width: 190px;
+    }
+
+    .sidebar nav {
+        gap: 10px;
+        padding: 20px 0px;
+        align-items: center;
+    }
+
+  }
+
+
+@media only screen and (max-width: 615px) {
+    .calculate-table th, .calculate-table td  {
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .calculate-table th, .calculate-table td  {
+        padding: 5px 5px;
+        font-size: small;
+    }
+
+    .item {
+        padding: 10px 10px;
+        gap: 2px;
+        width: 145px;
+    }
+
+    .item-container {
+        gap: 10px;
+
+    }
+
+    #money {
+        margin-left: -55px;
+    }
+
+    .sidebar nav {
+        gap: 10px;
+        padding: 10px 0px;
+        align-items: center;
+    }
+
+    .item div:nth-of-type(2) input {
+        width: 50px;
+        padding: 5px;
+    }
+
+    .item img {
+        width: 5em !important;
+    }
+
+    .item h2 {
+        font-size: large;
+    }
+
+}
+

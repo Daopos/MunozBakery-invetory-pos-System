@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('../photos/bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0; /* Optional: remove default margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.center-box {
+    width: 700px;
+    height: 400px;
+    background: rgba(246, 241, 241, 0.4);
+    border-radius: 35px;
+    display: flex;
+}
+
+.center-box div {
+    width: 50%;
+}
+
+.intro-box {
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 24px;
+    color: #0A2647;
+}
+
+.intro-box img {
+    width: 150px;
+}
+
+.intro-box h1:nth-child(2) {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.intro-box h1:nth-child(3) {
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: -15px;
+}
+
+.login-box {
+    background-color: #F6F1F1;
+    border-radius: 35px;
+    display: flex;
+}
+
+.login-box form {
+    padding: 20px 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.login-box form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form div input {
+    height: 37px;
+    border-radius: 7px;
+    background-color: #F6F1F1;
+    border: 3px solid #146C94;
+    padding: 0 10px;
+}
+
+div label {
+    font-weight: 300;
+}
+
+form h1 {
+    color: #19A7CE;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+input[type="submit"] {
+    background-color: #146C94;
+    color: #F6F1F1;
+    border: none;
+    height: 37px;
+    font-size: large;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+form div:nth-child(2) {
+    margin-top: -20px;
+}
+
+
+
+
+@media only screen and (max-width: 501px) {
+    .center-box {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        align-items: center;
+    }
+
+    .center-box div {
+        width: 300px;
+    }
+
+    .intro-box img {
+        width: 100px;
+    }
+
+    .intro-box h1:nth-child(2) {
+        font-size: 20px;
+    }
+
+    .intro-box h1:nth-child(3) {
+        font-size: 20px;
+    }
+
+
+}
